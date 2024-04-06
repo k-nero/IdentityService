@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="CLR|Win32">
+      <Configuration>CLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="CLR|x64">
+      <Configuration>CLR</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{92036431-7d09-4283-80cf-378bad6c7e37}</ProjectGuid>
+    <RootNamespace>DrogonServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>
+    </WindowsTargetPlatformMinVersion>
+    <TargetFramework>
+    </TargetFramework>
+    <ProjectName>IdentityService</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CLR|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CLR|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='CLR|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='CLR|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>true</VcpkgEnableManifest>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <VcpkgInstalledDir>$(SolutionDir)vcpkg_installed</VcpkgInstalledDir>
+    <VcpkgAdditionalInstallOptions>
+    </VcpkgAdditionalInstallOptions>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <VcpkgInstalledDir>$(SolutionDir)vcpkg_installed</VcpkgInstalledDir>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">
+    <VcpkgInstalledDir>$(SolutionDir)vcpkg_installed</VcpkgInstalledDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='CLR|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Application;$(SolutionDir)Infrastructure;$(SolutionDir)Domain;$(SolutionDir)lib\SQLAPI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>
+      </FavorSizeOrSpeed>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Rpcrt4.lib;Domain.lib;bcrypt.lib;Infrastructure.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\$(IntDir);$(AdditionalLibraryDirectories);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command> xcopy /d /y "$(SolutionDir)lib\SQLAPI\bin\*.*" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Application;$(SolutionDir)Infrastructure;$(SolutionDir)Domain;$(SolutionDir)lib\SQLAPI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Rpcrt4.lib;Domain.lib;bcrypt.lib;Infrastructure.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\$(IntDir);$(AdditionalLibraryDirectories);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Application;$(SolutionDir)Infrastructure;$(SolutionDir)Domain;$(SolutionDir)lib\SQLAPI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Rpcrt4.lib;Domain.lib;bcrypt.lib;Infrastructure.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\$(IntDir);$(AdditionalLibraryDirectories);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command> xcopy /d /y "$(SolutionDir)lib\SQLAPI\bin\sqlapi.dll" "$(OutDir)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AuthController.cpp" />
+    <ClCompile Include="Authorization.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="UserController.cpp" />
+    <ClInclude Include="AuthController.h" />
+    <ClInclude Include="Macros.h" />
+    <ClInclude Include="ModelBinding.h" />
+    <ClInclude Include="SwaggerSpec.h" />
+    <ClInclude Include="TodoItemController.h" />
+    <ClCompile Include="SwaggerSpec.cpp" />
+    <ClCompile Include="TodoItemController.cpp" />
+    <ClCompile Include="TodoListController.cpp" />
+    <ClInclude Include="TodoListController.h" />
+    <ClInclude Include="UserController.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Authorization.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.vcxproj">
+      <Project>{15924752-b77c-4b82-b80c-22cc6af3175d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.vcxproj">
+      <Project>{63024791-e272-4acf-bf1c-569121ac388d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure\Infrastructure.vcxproj">
+      <Project>{b65be107-58be-43dd-8244-ccb27f0b6dcb}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="public\favicon.png" />
+    <Image Include="swagger\favicon-16x16.png" />
+    <Image Include="swagger\favicon-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="swagger\index.css">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/swagger</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="swagger\index.html">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/swagger</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="swagger\oauth2-redirect.html">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/swagger</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="swagger\swagger-initializer.js">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/swagger</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="swagger\swagger-ui-bundle.js">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/swagger</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="swagger\swagger-ui-bundle.js.map">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/swagger</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="swagger\swagger-ui-es-bundle-core.js">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/swagger</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="swagger\swagger-ui-es-bundle-core.js.map">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/swagger</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="swagger\swagger-ui-es-bundle.js">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/swagger</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="swagger\swagger-ui-es-bundle.js.map">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/swagger</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="swagger\swagger-ui-standalone-preset.js">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/swagger</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="swagger\swagger-ui-standalone-preset.js.map">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/swagger</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="swagger\swagger-ui.css">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/swagger</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="swagger\swagger-ui.css.map">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/swagger</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="swagger\swagger-ui.js">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/swagger</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="swagger\swagger-ui.js.map">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)/swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/swagger</DestinationFolders>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="swagger\openapi.json">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)\swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)\swagger</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)\swagger</DestinationFolders>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="certificate.crt">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="config.ini">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="private.key">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="private_key.pem">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="public_key.pem">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="public\404.html">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)public</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)public</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)public</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="public\css\404.css">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)public/css</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)public/css</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)public/css</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="public\images\astronaut.svg">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)public/images</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)public/images</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)public/images</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="public\images\planet.svg">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)public/images</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)public/images</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)public/images</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="public\js\404.js">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)public/js</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='CLR|x64'">$(OutDir)public/js</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)public/js</DestinationFolders>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties swagger_4openapi_1json__JsonSchema="schema.json" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

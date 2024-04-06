@@ -1,0 +1,269 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Drogon Api 3.0",
+    "description": "Drogon",
+    "version": "1.0.11"
+  },
+  "servers": [
+    {
+      "url": "https://127.0.0.1/"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Todo List",
+      "description": "Everything about your Todo List",
+      "externalDocs": {
+        "description": "Find out more",
+        "url": "http://swagger.io"
+      }
+    }
+  ],
+  "paths": {
+    "/api/todo-list": {
+      "get": {
+        "tags": [
+          "Todo List"
+        ],
+        "summary": "Get todo lists",
+        "description": "",
+        "operationId": "getTodoList",
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content" : {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TodoList"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "page",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Todo List"
+        ],
+        "summary": "Add a new todo list",
+        "description": "",
+        "operationId": "addTodoList",
+        "requestBody": {
+          "description": "Todo List object that needs to be added",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TodoList"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful operation"
+          }
+        }
+      }
+    },
+    "/api/todo-list/{id}": {
+      "get": {
+        "tags": [
+          "Todo List"
+        ],
+        "summary": "Get todo list by id",
+        "description": "",
+        "operationId": "getTodoListById",
+        "responses": {
+          "200": {
+            "description": "Successful operation"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Todo List"
+        ],
+        "summary": "Delete todo list by id",
+        "description": "",
+        "operationId": "deleteTodoListById",
+        "responses": {
+          "200": {
+            "description": "Successful operation"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Todo List"
+        ],
+        "summary": "Update todo list by id",
+        "description": "",
+        "operationId": "updateTodoListById",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful operation"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "security": [
+    {
+      "bearer": []
+    },
+    {
+      "drogon_oauth2": []
+    }
+  ],
+  "components": {
+    "schemas": {
+      "TodoList": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "string"
+          },
+          "CreatedDate": {
+            "type": "string"
+          },
+          "Description": {
+            "type": "string"
+          },
+          "ModifiedDate": {
+            "type": "string"
+          },
+          "Title": {
+            "type": "string"
+          },
+          "Version": {
+            "type": "integer"
+          },
+          "TodoItems": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TodoItem"
+            }
+          }
+        }
+      },
+      "TodoItem": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "string"
+          },
+          "CreatedDate": {
+            "type": "string"
+          },
+          "Note": {
+            "type": "string"
+          },
+          "ModifiedDate": {
+            "type": "string"
+          },
+          "Title": {
+            "type": "string"
+          },
+          "Version": {
+            "type": "integer"
+          },
+          "TodoListId": {
+            "type": "string"
+          },
+          "TodoList": {
+            "$ref": "#/components/schemas/TodoList"
+          },
+          "IsComplete": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "bearer": {
+        "type": "http",
+        "description": "Test",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      },
+      "drogon_oauth2": {
+        "type": "oauth2",
+        "flows": {
+          "authorizationCode": {
+            "authorizationUrl": "https://example.com/oauth/authorize",
+            "tokenUrl": "https://example.com/oauth/token",
+            "scopes": {
+              "read": "Grants read access",
+              "write": "Grants write access"
+            }
+          }
+        }
+      }
+    }
+  }
+}

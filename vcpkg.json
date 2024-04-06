@@ -1,0 +1,93 @@
+{
+  "dependencies": [
+    {
+      "name": "drogon",
+      "version>=": "1.9.2",
+      "host": true,
+      "platform": "x64"
+    },
+    {
+      "name": "boost-log",
+      "version>=": "1.84.0",
+      "host": true,
+      "platform": "x64"
+    },
+    {
+      "name": "boost-describe",
+      "version>=": "1.84.0",
+      "host": true,
+      "platform": "x64"
+    },
+    {
+      "name": "jwt-cpp",
+      "version>=": "0.6.0",
+      "host": true,
+      "platform": "x64"
+    },
+    {
+      "name": "inih",
+      "version>=": "57",
+      "host": true,
+      "platform": "x64",
+      "default-features": false,
+      "features": [
+        "cpp"
+      ]
+    },
+    {
+      "name": "boost-json",
+      "version>=": "1.84.0",
+      "host": true,
+      "platform": "x64"
+    },
+    {
+      "name": "boost-beast",
+      "version>=": "1.84.0",
+      "host": true,
+      "platform": "x64"
+    },
+    {
+      "name": "hiredis",
+      "version>=": "1.2.0",
+      "host": true,
+      "platform": "x64",
+      "default-features": false,
+      "features": [
+        {
+          "name": "ssl",
+          "platform": "x64"
+        }
+      ]
+    },
+    {
+      "name": "grpc",
+      "version>=": "1.51.1",
+      "host": true,
+      "platform": "x64"
+    },
+    {
+      "name": "usockets",
+      "version>=": "0.8.6#1",
+      "host": true,
+      "platform": "x64",
+      "default-features": false,
+      "features": [
+        "ssl",
+        "network"
+      ]
+    },
+    {
+      "name": "uwebsockets",
+      "version>=": "20.60.0",
+      "host": true,
+      "platform": "x64"
+    },
+    {
+      "name": "sqlitecpp",
+      "version>=": "3.3.1",
+      "host": true,
+      "platform": "x64"
+    }
+  ],
+  "builtin-baseline": "be9eb6694585a8db137872b29fcad3619a5f893a"
+}

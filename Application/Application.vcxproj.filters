@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Services">
+      <UniqueIdentifier>{a0081a3a-c8de-4d36-8487-47d2ba10cda0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{20946bce-1235-4dfc-ad5d-bfa552f241d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Services">
+      <UniqueIdentifier>{1161eb53-88cc-4bac-9847-8821d7fc4f0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{9149844f-55c9-4af4-ba05-a8fe88616cc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Model">
+      <UniqueIdentifier>{ed85d578-47ba-4d32-a470-3f570e30e713}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model">
+      <UniqueIdentifier>{50cef1b3-460a-48a0-b20b-4b1e19b45997}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common\Exception">
+      <UniqueIdentifier>{789210d6-52ac-47af-bcdc-2c1d341afcc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\Exception">
+      <UniqueIdentifier>{5b6cf5ef-058f-453d-92f7-c34a9bfa8a0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\Internal">
+      <UniqueIdentifier>{d70fc509-9c9d-4168-b0dc-acdd7ab0571f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common\Internal">
+      <UniqueIdentifier>{27910e7a-0f6f-4b89-b88f-6d6afa417115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common\ORM">
+      <UniqueIdentifier>{c6a7bc36-d359-402a-bdf2-e9e2461896e3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ApplicationUserServices.h">
+      <Filter>Header Files\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationApi.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PaginationObject.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandBuilder.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TodoListService.h">
+      <Filter>Header Files\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="TodoItemService.h">
+      <Filter>Header Files\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Mapper.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TodoListModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="TodoItemModel.h">
+      <Filter>Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NotFoundExcept.h">
+      <Filter>Header Files\Common\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseCommand.h">
+      <Filter>Header Files\Common\ORM</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseQuery.h">
+      <Filter>Header Files\Common\ORM</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseQueryV2.h">
+      <Filter>Header Files\Common\ORM</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files\Common\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files\Common\Internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ApplicationUserServices.cpp">
+      <Filter>Source Files\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="PaginationObject.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandBuilder.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="TodoListService.cpp">
+      <Filter>Source Files\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="TodoItemService.cpp">
+      <Filter>Source Files\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="TodoListModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="TodoItemModel.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="NotFoundExcept.cpp">
+      <Filter>Source Files\Common\Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files\Common\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files\Common\Internal</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

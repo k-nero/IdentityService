@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{73dc5ce8-1681-49e6-ab80-847c6268258f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{ee2021f6-39c0-410a-a7e4-f0a532dd1ac3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Json">
+      <UniqueIdentifier>{67aa469c-6acb-4d0d-9463-c62bf81e71ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Database">
+      <UniqueIdentifier>{ede232c4-7f63-43e1-8726-013bd2880b7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Database">
+      <UniqueIdentifier>{f7ad2d72-a72f-41e6-9a06-7572c8e2e63c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common\Internal">
+      <UniqueIdentifier>{7dcfd87c-6ef3-43f2-bfee-1c46be656ebf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Database\MSSQL">
+      <UniqueIdentifier>{91a529ff-57dc-4bfe-97a2-5b720c4e61b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Database\SQLITE3">
+      <UniqueIdentifier>{77ac6e86-a446-4854-8fee-bc20fe6091a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Database\MSSQL">
+      <UniqueIdentifier>{5d69d3ea-9658-44ae-93b9-e76ab2035e92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Database\SQLITE3">
+      <UniqueIdentifier>{70a0c691-6019-47c6-a8ec-9f4d0c0fd1ae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConfigProvider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BcryptPW.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SwaggerConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InfrastructureApi.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonHelper.h">
+      <Filter>Header Files\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjToJson.h">
+      <Filter>Header Files\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonParser.h">
+      <Filter>Header Files\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="DbContext.h">
+      <Filter>Header Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="RedisContext.h">
+      <Filter>Header Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="DbClientInterface.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files\Common\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files\Common\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="SQLAPIClient.h">
+      <Filter>Header Files\Database\MSSQL</Filter>
+    </ClInclude>
+    <ClInclude Include="SQLite3Client.h">
+      <Filter>Header Files\Database\SQLITE3</Filter>
+    </ClInclude>
+    <ClInclude Include="DbCommandInterface.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="MSSQLCommand.h">
+      <Filter>Header Files\Database\MSSQL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ConfigProvider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BcryptPW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SwaggerConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="RedisContext.cpp">
+      <Filter>Source Files\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="DbContext.cpp">
+      <Filter>Source Files\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="SQLAPIClient.cpp">
+      <Filter>Source Files\Database\MSSQL</Filter>
+    </ClCompile>
+    <ClCompile Include="SQLite3Client.cpp">
+      <Filter>Source Files\Database\SQLITE3</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
